@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "The Fibonacci toolbox"
+title: "The Fibonacci Toolbox"
 tags: [ "maths" ]
 ---
 
 These are some facts and theorems on fibonacci numbers that are often useful for various problems.
 
-Wiki Link: https://en.wikipedia.org/wiki/Fibonacci_number
+Wiki Link: [Fibonacci Number](https://en.wikipedia.org/wiki/Fibonacci_number)
 
 ----
 
@@ -67,6 +67,7 @@ Fact 2: Every positive integer $m$, there is a Fibonacci number divisible by $m$
 Fact 3: A number x is fibonacci if $5x^2 \pm 4$ is a square. Another way to test if a number is fibonacci is to invert binet's formula.
 
 Fact 4: $G_n$: The ratio of two successive term in the Fibonacci Sequence, i.e, $\displaystyle G_n = \frac{F_{n+1}}{F_n}$
+
 ---
 
 # Theorems
@@ -81,5 +82,5 @@ Fact 4: $G_n$: The ratio of two successive term in the Fibonacci Sequence, i.e, 
 *  Theorem: All the odd divisors of Fibonacci numbers with odd subscripts are of
 the form $4t + 1$
 
-Theorem: Let $r \in \mathbb{N}$. The Fibonacci numbers modulo $r$ form a periodic sequence.
+ * Theorem: Let $r \in \mathbb{N}$. The Fibonacci numbers modulo $r$ form a periodic sequence.
 ---
