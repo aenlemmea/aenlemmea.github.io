@@ -12,7 +12,7 @@ title: Home
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <span>
-        [{{ post.date | date: "%y-%m-%d" }}]
+        [{{ post.date | date: "%y-%m-%d" }}] // Tags: 
         {% if post.tags %}
           {% for tag in post.tags %}
             <small>{{ tag }}</small>{% unless forloop.last %}, {% endunless %}
