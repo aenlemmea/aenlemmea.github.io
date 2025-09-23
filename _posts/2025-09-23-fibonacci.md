@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The Fibonacci toolbox"
-tags = [ "maths" ]
+tags: [ "maths" ]
 ---
 
 These are some facts and theorems on fibonacci numbers that are often useful for various problems.
