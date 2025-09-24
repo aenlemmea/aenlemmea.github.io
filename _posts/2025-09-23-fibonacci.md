@@ -46,7 +46,7 @@ for $n \geq 0$.
     \begin{pmatrix}F_{n+1} & F_n\\F_n & F_{n-1}\end{pmatrix}
     $$
 
-6. (Parity) If $F_n$ is even iff $n$ is divisible by $3$
+6. (Parity) $F_n$ is even iff $n$ is divisible by $3$
 
 7. (Lucas Identity)  
     $$F_n^2 + F_{n+1}^2 = F_{2n+1}$$

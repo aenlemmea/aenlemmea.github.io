@@ -1,2 +1,3 @@
 # aenlemmea.github.io
-My personal blog
+
+Personal thoughts on Computing, Maths and Literature.
