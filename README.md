@@ -1,3 +1,3 @@
 # aenlemmea.github.io
 
-Personal thoughts on Computing, Maths and Literature.
+Personal thoughts on Computing and Literature.
