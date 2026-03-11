@@ -4,8 +4,8 @@ title: "Finally paying attention"
 tags: [ "computing" ]
 ---
 
-I finally got around to reading the "Attention Is All You Need" paper by Vaswani et al.
- I had tried reading it before but in each attempt I would stop at Section 3.2.1 and would hence end up at the beginning (1).
+I finally got around to reading the "[Attention Is All You Need](https://arxiv.org/abs/1706.03762)" paper by Vaswani et al.
+ I had tried reading it before but in each attempt I would stop at Section 3.2.1 and would hence end up at the beginning (3 $\to$ 2 $\to$ 1).
 
 I will avoid explaining the content or discussing the paper in detail, since there are N pages on it. This blog is mostly my journal of what I derived from the paper.
 
