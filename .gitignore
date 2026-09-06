@@ -1,6 +1,16 @@
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 
+# 
+.vs/
+.idea/
+.vim/
+.emacs/
+.code/
+.cache/
+cache/
+build/
+
 # Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
 _site/
 .sass-cache/
