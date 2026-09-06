@@ -3,7 +3,6 @@ hr {
   height: 1px;                
   background-color: #00236f; 
   
-  /* Responsive Width Setup */
   width: 80%;                
   max-width: 600px;           
   margin: 2.5rem auto;  
@@ -42,6 +41,8 @@ body {
     border-block: 2px solid #3c1642;
     overflow: hidden;
     white-space: nowrap;
+
+    z-index: 1000;
 }
 
 .quote-top {
@@ -54,4 +55,33 @@ body {
 
 .quote-bottom {
     bottom: 0;
+}
+
+@media print {
+    .quote-top,
+    .quote-bottom {
+        display: none !important;
+    }
+
+    body {
+        background-color: #ffffff !important; 
+        color: #000000 !important;
+        padding-block: 0 !important;        
+    }
+
+    .page-wrap {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        text-align: left !important;       
+    }
+
+    p, hr {
+        page-break-inside: avoid;
+    }
+
+    hr {
+        border-top: 1px solid #000000 !important;
+        background-color: transparent !important;
+    }
 }
