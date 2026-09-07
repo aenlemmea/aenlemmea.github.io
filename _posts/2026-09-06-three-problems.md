@@ -34,7 +34,7 @@ The recursive structure is clear from (2.) above, this essentially provides the 
 
 The key is to observe that we necessarily have to dive deep towards a subtree, let it do its thing, propagate. There are two subtrees possible in a binary tree. Implying the order must be Left-Right-Node (or, Right-Left-Node really) hence postorder traversal it is!
 
-![Rough interworking of the bottom up approach](../assets/post-content/diameter-bt.png)
+![Rough interworking of the bottom up approach](../assets/post-content/diameter-bt.png){: width="65%"}
 
 We can now start filling in the blanks:
 
@@ -76,11 +76,11 @@ This idea can therefore be applied to create a one scan algorithm:
 
 Let the left be from index 0, the right be from index `len(array) - 1`, decreasing. We then proceed to fix a convention i.e. let the middle (mid) pile be only the 1s. Similarly left indexed pile be 0s and the right indexed pile be 2s.
 
-![The setup](../assets/post-content/dnf1.png)
+![The setup](../assets/post-content/dnf1.png){: width="65%"}
 
 What this allows us is if we encounter an array element indexed by mid to be 1, we simply move mid ahead to index the next element. If the element indexed by mid is a 0, we swap the mid indexed element with the left indexed element so as to make left follow the convention that it must hold 0s and mid should only index 0s and move both left and mid indexes forward. Lastly, if mid indexed element is a 2, we similarly swap and decrement the right indexer. 
 
-![Sample Case](../assets/post-content/dnf2.png)
+![Sample Case](../assets/post-content/dnf2.png){: width="65%"}
 
 The element at the left pointer is always either a 1 (if left is trailing behind mid) or a 0 (if left and mid are at the same spot)
 
