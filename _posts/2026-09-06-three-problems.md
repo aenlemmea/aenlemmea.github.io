@@ -4,14 +4,14 @@ title: "The Three Algorithms"
 tags: [ "Computing", "Algorithms" ]
 ---
 
-While solving leetcode, I have found that solutions elsewhere lack the insights for how the algorithm is put together. Insights are unique from person to person, some concept trivial to person A might be really non trivial for person B. This post is my attempt to put the construction principles across three problems to hopefully illustrate how naturally solutions can be derived.
+While solving leetcode, I have found that construction of solutions requires a insightful sketch of the core thought process. Insights are unique from person to person, some concept trivial to person A might be really non trivial for person B. This post is my attempt to put the construction principles across three problems to hopefully illustrate how naturally solutions can be derived.
 
 ## Problem 1: Diameter of a Binary Tree.
 
 **Diameter of a binary tree**: It is defined as the longest path between any two nodes of a binary tree. It is not necessary that the longest path passes through the root itself. Quite literally: $$\texttt{max}({\tt len(a, b) })$$ where $\texttt{a, b}$ are any two nodes of the given binary tree.
 
 The given problem is [Leetcode 543](https://leetcode.com/problems/diameter-of-binary-tree/).
-The first insight that can be obtained here is that, the concept of a "diameter" only exists for a binary tree (can be the rooted tree, or a subtree), there is no concept of diameter of a node.  This is insightful for a number of reasons:
+The first insight that can be obtained here is that, the concept of a "diameter" only exists for a binary tree (can be the rooted tree, or a subtree), there is no concept of diameter of a node. This is insightful for a number of reasons:
 
 ```cpp
 int diameterOfBinaryTree(TreeNode* root) {
@@ -25,7 +25,7 @@ However, if you recall the diameter is defined for any two nodes.
 
 If you do consider the "Unless.." then this does gives us a recipe to get the diameter of a subtree! It will be used soon.
 
-The second and more seasoned insight that can be only be observed abstractly is that in order to get a max length path, a **subtree** needs to first:
+The second and more critical insight that can be only be observed abstractly is that in order to get a max length path, a **subtree** needs to first:
 
 1. Identify its own max length path (its own diameter). This will be one of the candidates that can be tried and tested to check if this diameter is the globally the best (max).
 2. Propagate or contribute the length of the longest branch or arm to the parent so the parent (which itself is a binary tree, remember!) can execute (1.) as written above.
@@ -112,7 +112,7 @@ void dnf(int array[], int n) {
 ```
 
 
-### Problem 3: Quick Select
+## Problem 3: Quick Select
 
 A common question that is asked is: How do we find the Kth largest value in an array? 
 
